@@ -1,0 +1,149 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   body {
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      font-family: sans-serif;
+      background: rgb(255, 255, 255);
+
+      header {
+         width: 85vw;
+         margin: 0 auto;
+         height: 100px;
+         background: rgb(128, 29, 221);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         border-bottom-left-radius: 8px;
+         border-bottom-right-radius: 8px;
+
+         h1 {
+            color: #fff;
+         }
+      }
+
+      .container {
+         width: 60vw;
+         height: auto;
+         padding: 20px 50px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+         border-bottom-left-radius: 5px;
+         border-bottom-right-radius: 5px;
+         margin: 0 auto;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+
+         .row {
+            display: flex;
+
+            label {
+               width: 25%;
+            }
+
+            label+input {
+               width: 75%;
+               border: none;
+               outline: none;
+               border: 1px solid rgb(171, 144, 189);
+               border-radius: 5px;
+               padding-left: 15px !important;
+               color: #333;
+               transition: all 250ms;
+
+               &::placeholder {
+                  color: rgb(156, 156, 156);
+               }
+
+               &:focus {
+                  border: 1px solid rebeccapurple;
+               }
+            }
+
+            label, label+input {
+               display: inline-block;
+               padding: 10px 0;
+            }
+
+            input[type=number] {
+               &::-webkit-outer-spin-button,
+               &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                   margin: 0;
+               }
+            }
+
+            .btnAdd {
+               width: 100%;
+               display: inline-block;
+               background: rgb(128, 29, 221);
+               border: none;
+               outline: none;
+               border-radius: 5px;
+               color: #fff;
+               font-size: 1.1rem;
+               padding: 8.5px 0;
+               transition: all 250ms;
+
+               &:hover {
+                  opacity: .8;
+               }
+            }
+         }
+      }
+
+      .book-table {
+         width: 70vw;
+         margin: 50px auto 0 auto;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+         border-radius: 10px;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         
+         .book-infos {
+            display: flex;
+            justify-content: space-evenly;
+
+            div.delete {
+
+               i {
+                  color: rgb(185, 18, 18);
+                  transition: all 150ms;
+
+                  &:hover {
+                     opacity: .8;
+                  }
+               }
+            }
+
+            div {
+               padding: 10px 0;
+               width: 30%;
+               text-align: center;
+
+               h4 {
+                  text-align: center;
+               }
+            }
+         }
+
+         .book-infos.border {
+            border-top: 1px solid #ddd;
+         }
+      }
+
+      .counter-area {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 20px;
+      }
+
+   }
+}

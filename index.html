@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Book Adding App </title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+   
+   <header>
+      <h1>Book Adding App</h1>
+   </header>
+
+   <div class="container">
+      
+      <div class="row">
+         <label for="book-name"> Book Name: </label>
+         <input type="text" id="book-name" placeholder="Please enter a book name">
+      </div>
+
+      <div class="row">
+         <label for="author-name"> Author Name: </label>
+         <input type="text" id="author-name" placeholder="Please enter an author name">
+      </div>
+
+      <div class="row">
+         <label for="page"> Page: </label>
+         <input type="number" id="page" placeholder="Please enter number of pages ">
+      </div>
+
+      <div class="row">
+         <button class="btnAdd"> Add Book </button>
+      </div>
+
+   </div>
+
+   <div class="book-table">
+      <div class="book-infos">
+         <div class="bookName"> <h4>BOOK NAME</h4> </div>
+         <div class="authorName"> <h4>AUTHOR NAME</h4> </div>
+         <div class="page"> <h4>PAGE</h4> </div>
+         <div class="delete"></div>
+      </div>
+   </div>
+   
+   <div class="counter-area">
+      <span class="counter">There is no book in the list.</span>
+   </div>
+
+
+   <script type="module" src="main.js"></script>
+   <script type="module" src="Book.js"></script>
+   <script type="module" src="UI.js"></script>
+</body>
+</html>
